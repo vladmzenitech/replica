@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
     list-style: none;
-            text-decoration: none;
-
 }
 
 a {
@@ -50,14 +48,15 @@ a {
     margin-left:10px;
 }
 
-.icoana {
+.emoji {
     border: 1px green solid;
     display: inline-flex;
     background-color: #38B09D;
-    width: 1.45em;
-    height: 1.45em;
+    width: 1.6em;
+    height: 1.6em;
     border-radius: 50%;
     justify-content: center;
+    align-items: center;
 }
 
 #navbar a .listaText {
@@ -73,7 +72,6 @@ a {
 @media(max-width:680px){
     #navbar ul {
         display: flex;
-        flex-direction: end;
         flex-direction: column;
         align-items: end;
         margin: 0 auto;
