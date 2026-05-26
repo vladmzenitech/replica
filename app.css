@@ -64,9 +64,11 @@ a {
 }
 
 
-#navbar a .listaText:hover {
-    color:#38B09D
+#navbar a:hover .listaText{
+        color:#38B09D
 }
+
+
 
 
 @media(max-width:680px){
