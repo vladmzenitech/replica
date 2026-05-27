@@ -8,19 +8,22 @@ a {
     color: inherit;
 }
 
-#navbar {
+body {
+    background-color: black;
+}
 
+#navbar {
+    /* border: 1px solid red; */
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-size: large;
     font-style: normal;
-    border: 1px solid red;
     display: flex;
     background-color: black;
     color: white;
     align-items: center;
-        white-space: nowrap;
+    white-space: nowrap;
 
 }
 
@@ -65,10 +68,82 @@ a {
 
 
 #navbar a:hover .listaText{
-        color:#38B09D
+        color:#38B09D;
 }
 
+#hero{
+    /* border: 1px red solid; */
+    background-color: rgba(128, 128, 128, 0.614);
+    display: flex;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: large;
+    font-style: normal;
+    height: 30rem;
+    margin: 0 8%;
+    border-radius: 20px;
+    color:white
+}
 
+#hero #heroStanga{
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    width: 45%;
+}
+
+#heroStanga a {
+    display: flex;
+    width: 15rem;
+    border-radius: 5px;
+    background-color: #38B09D;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    margin-top: 1rem;
+}
+
+#heroStanga a span{
+    padding: 0.2rem;
+}
+
+#heroDreapta{
+    /* border: 1px solid red; */
+    width: 60%;
+    display: flex;
+}
+
+#heroDreapta #sertaras{
+    /* border:1px solid red; */
+    border-radius: 10px;
+    display: flex;
+    width: 220rem;
+    height: fit-content;
+    background-color: #38B09D;
+    margin:2rem 2rem 0 30rem;
+    padding:0 1rem 0 1rem;
+    font-size: 0.8rem;
+}
+#heroDreapta #sertaras h3{
+    text-transform: uppercase;
+}
+.hero-icon {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 0.1rem;
+    font-size: 2rem;
+}
+
+#hero a {
+     transition: 0.3s;
+}
+
+#hero a:hover{
+    background-color: #38b09eac;
+}
 
 
 @media(max-width:680px){
