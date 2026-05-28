@@ -26,7 +26,6 @@ body {
     color: white;
     align-items: center;
     white-space: nowrap;
-
 }
 
 #navbar img {
@@ -108,7 +107,6 @@ body {
     padding-left: 2rem;
     width: 45%;
     z-index: 1;
-
 }
 
 #heroStanga a {
@@ -196,6 +194,5 @@ body {
         gap: 14px;
         padding-top: 10px;
         padding-bottom: 10px;
-
     }
 }
