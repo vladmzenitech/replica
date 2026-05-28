@@ -8,20 +8,24 @@ a {
     color: inherit;
 }
 
-#navbar {
+body {
+    background-color: black;
+    background-image: url("public/perfectBackground.png");
+    margin: 0;
+}
 
+#navbar {
+    /* border: 1px solid red; */
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-size: large;
     font-style: normal;
-    border: 1px solid red;
     display: flex;
     background-color: black;
     color: white;
     align-items: center;
-        white-space: nowrap;
-
+    white-space: nowrap;
 }
 
 #navbar img {
@@ -39,13 +43,14 @@ a {
     margin-left: auto;
     margin-right: 200px;
     word-spacing: 5px;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
-#navbar ul li{
+#navbar ul li {
     display: flex;
     /* border: 1px red solid; */
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .emoji {
@@ -64,23 +69,130 @@ a {
 }
 
 
-#navbar a:hover .listaText{
-        color:#38B09D
+#navbar a:hover .listaText {
+    color: #38B09D;
 }
 
+#hero {
+    /* border: 1px red solid; */
+    background-color: rgba(128, 128, 128, 0.614);
+    display: flex;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: large;
+    font-style: normal;
+    min-height: 30rem;
+    margin: 0 8%;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
 
+#video {
+    /* border: 1px red solid; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    /* border-radius: 10px; */
+}
 
+#hero #heroStanga {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    width: 45%;
+    z-index: 1;
+}
 
-@media(max-width:680px){
+#heroStanga a {
+    display: flex;
+    width: 15rem;
+    border-radius: 5px;
+    background-color: #38B09D;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    margin-top: 1rem;
+}
+
+#heroStanga a span {
+    padding: 0.2rem;
+}
+
+#heroDreapta {
+    /* border: 1px solid red; */
+    width: 55%;
+    display: flex;
+    justify-content: end;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    z-index: 1;
+}
+
+#heroDreapta #sertaras {
+    /* border:1px solid red; */
+    white-space: nowrap;
+    border-radius: 10px;
+    display: flex;
+    height: fit-content;
+    background-color: #38B09D;
+    /* margin:2rem 2rem 0 30rem; */
+    padding: 0 1rem 0 1rem;
+    font-size: 0.8rem;
+}
+
+#heroDreapta #sertaras h3 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.hero-icon {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 0.1rem;
+    font-size: 2rem;
+}
+
+#hero a {
+    transition: 0.3s;
+}
+
+#hero a:hover {
+    background-color: #38b09eac;
+}
+
+#text {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text h3 {
+    /* border: 1px red solid; */
+    margin-bottom: 0;
+}
+
+#text p {
+    /* border: 1px red solid; */
+    margin-top: 0.5rem;
+}
+
+@media(max-width:680px) {
     #navbar ul {
         display: flex;
         flex-direction: column;
         align-items: end;
         margin: 0 auto;
-        margin-right: 10px;    
-        gap:14px;
+        margin-right: 10px;
+        gap: 14px;
         padding-top: 10px;
-                padding-bottom: 10px;
-
+        padding-bottom: 10px;
     }
 }
