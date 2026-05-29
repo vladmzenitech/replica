@@ -11,6 +11,9 @@ a {
 body {
     background-color: black;
     background-image: url("public/perfectBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin: 0;
 }
 
@@ -184,6 +187,67 @@ body {
     margin-top: 0.5rem;
 }
 
+#servicii {
+    /* border: 1px solid red; */
+    /* Just Font Here */
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 3;
+    /* Just Font Here */
+
+    background-color: rgba(0, 0, 0, 0.418);
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+    color: white;
+}
+
+#servicii h2 {
+    font-size: xx-large;
+    margin-top: 3rem;
+    color: #38B09D;
+}
+
+.servRow {
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1100px;
+    margin-top: 3rem;
+    padding: 0 2rem 0 2rem;
+    justify-content: space-between;
+
+}
+
+.servChenar {
+    background-color: rgba(0, 0, 78, 0.35);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 0.5rem;
+}
+
+.servRow img {
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+#servIcoana {
+    background-color: #38B09D;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
 @media(max-width:680px) {
     #navbar ul {
         display: flex;
@@ -195,4 +259,14 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .servRow {
+        flex-direction: column;
+    }
+
+    .servRow img {
+        width: 100%;
+    }
+
+
 }
